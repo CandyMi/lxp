@@ -1,7 +1,7 @@
 #define LUA_LIB
 
-#include <expat.h>
 #include <core.h>
+#include <expat.h>
 
 #define ParserType	"Expat"
 
@@ -22,4 +22,3 @@
 #define UnparsedEntityDeclKey		"UnparsedEntityDecl"
 #define StartDoctypeDeclKey		"StartDoctypeDecl"
 #define XmlDeclKey			"XmlDecl"
-
