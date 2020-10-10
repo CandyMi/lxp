@@ -1,0 +1,10 @@
+
+# 需要让CMAKE检查是否存在EXPAT
+find_package(EXPAT REQUIRED)
+
+# 需要增加引用库
+aux_source_directory(luaclib/src/lxp lxp)
+
+# 需要生成动态库
+ADD_LIBRARY(lxp SHARED ${lxp})
+target_link_libraries(lxp expat core)
